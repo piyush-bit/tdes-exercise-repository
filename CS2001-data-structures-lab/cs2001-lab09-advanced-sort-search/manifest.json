@@ -1,0 +1,43 @@
+{
+  "lab_id": "cs2001-lab09",
+  "title": "Advanced Sorts (Quick, Merge) & Searches (Sequential, Binary) in C",
+  "version": "1.0.0",
+  "language": "c",
+  "runner_image": "lab-c-runner:v1.0",
+  "local_entrypoint": "make test-public",
+  "grading": [
+    {
+      "command": "make test-public",
+      "points": 0,
+      "public": true
+    },
+    {
+      "command": "make test-submission-advanced-sorts",
+      "points": 5,
+      "public": false
+    },
+    {
+      "command": "make test-submission-searches",
+      "points": 5,
+      "public": false
+    }
+  ],
+  "submission": {
+    "include_paths": [
+      "sort_search.c"
+    ],
+    "private_globs": [
+      "reference/*",
+      "tests_private/*"
+    ],
+    "exclude_globs": [
+      "*.o",
+      "bin/*",
+      "*.tar.gz"
+    ]
+  },
+  "limits": {
+    "memory_mb": 256,
+    "timeout_seconds": 10
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "lab_id": "cs2003-lab09",
+  "title": "Security Log Pattern & String Matcher",
+  "version": "1.0.0",
+  "language": "cpp",
+  "runner_image": "lab-cpp-runner:v1.0",
+  "local_entrypoint": "make test-public",
+  "grading": [
+    {
+      "command": "make test-public",
+      "points": 0,
+      "public": true
+    },
+    {
+      "command": "make test-submission-naive-matcher",
+      "points": 5,
+      "public": false
+    },
+    {
+      "command": "make test-submission-rabin-karp-matcher",
+      "points": 5,
+      "public": false
+    }
+  ],
+  "submission": {
+    "include_paths": [
+      "string_matching.cpp"
+    ],
+    "private_globs": [
+      "reference/*",
+      "tests_private/*"
+    ],
+    "exclude_globs": [
+      "*.o",
+      "bin/*",
+      "*.tar.gz"
+    ]
+  },
+  "limits": {
+    "memory_mb": 256,
+    "timeout_seconds": 10
+  }
+}

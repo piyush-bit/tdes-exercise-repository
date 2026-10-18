@@ -1,0 +1,44 @@
+{
+  "lab_id": "cs3001-lab08",
+  "title": "Binary Incrementer Transducer",
+  "version": "1.0.0",
+  "language": "c",
+  "runner_image": "lab-c-runner:v1.0",
+  "local_entrypoint": "make test-public",
+  "grading": [
+    {
+      "command": "make test-public",
+      "points": 0,
+      "public": true
+    },
+    {
+      "command": "make test-submission-increment-basic",
+      "points": 5,
+      "public": false
+    },
+    {
+      "command": "make test-submission-overflow-carry",
+      "points": 5,
+      "public": false
+    }
+  ],
+  "submission": {
+    "include_paths": [
+      "binary_incrementer.c"
+    ],
+    "private_globs": [
+      "reference/*",
+      "tests_private/*"
+    ],
+    "exclude_globs": [
+      "*.tar.gz",
+      "*.o",
+      "test_public_bin",
+      "test_priv_bin"
+    ]
+  },
+  "limits": {
+    "memory_mb": 256,
+    "timeout_seconds": 5
+  }
+}

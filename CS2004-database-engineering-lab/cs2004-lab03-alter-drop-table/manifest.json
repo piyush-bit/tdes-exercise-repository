@@ -1,0 +1,44 @@
+{
+  "lab_id": "cs2004-lab03",
+  "title": "E-Commerce Schema Migration (ALTER & DROP TABLE)",
+  "version": "1.0.0",
+  "language": "sql",
+  "runner_image": "lab-sql-runner:v1.0",
+  "local_entrypoint": "make test-public",
+  "grading": [
+    {
+      "command": "make test-public",
+      "points": 0,
+      "public": true
+    },
+    {
+      "command": "make test-submission-alter-table",
+      "points": 5,
+      "public": false
+    },
+    {
+      "command": "make test-submission-drop-table",
+      "points": 5,
+      "public": false
+    }
+  ],
+  "submission": {
+    "include_paths": [
+      "solution.sql"
+    ],
+    "private_globs": [
+      "reference/*",
+      "tests_private/*"
+    ],
+    "exclude_globs": [
+      "*.tar.gz",
+      "*.db",
+      "__pycache__/*",
+      "*.pyc"
+    ]
+  },
+  "limits": {
+    "memory_mb": 256,
+    "timeout_seconds": 15
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "lab_id": "cs3001-lab04",
+  "title": "Binary Divisible by 2 Automaton",
+  "version": "1.0.0",
+  "language": "c",
+  "runner_image": "lab-c-runner:v1.0",
+  "local_entrypoint": "make test-public",
+  "grading": [
+    {
+      "command": "make test-public",
+      "points": 0,
+      "public": true
+    },
+    {
+      "command": "make test-submission-even-binary",
+      "points": 5,
+      "public": false
+    },
+    {
+      "command": "make test-submission-odd-binary",
+      "points": 5,
+      "public": false
+    }
+  ],
+  "submission": {
+    "include_paths": [
+      "divisible_by_2.c"
+    ],
+    "private_globs": [
+      "reference/*",
+      "tests_private/*"
+    ],
+    "exclude_globs": [
+      "*.o",
+      "bin/*",
+      "*.tar.gz"
+    ]
+  },
+  "limits": {
+    "memory_mb": 256,
+    "timeout_seconds": 5
+  }
+}

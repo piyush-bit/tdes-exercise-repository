@@ -1,0 +1,42 @@
+{
+  "lab_id": "cs2003-lab08",
+  "title": "N-Queens Component Placement Solver",
+  "version": "1.0.0",
+  "language": "cpp",
+  "runner_image": "lab-cpp-runner:v1.0",
+  "local_entrypoint": "make test-public",
+  "grading": [
+    {
+      "command": "make test-public",
+      "points": 0,
+      "public": true
+    },
+    {
+      "command": "make test-submission-nqueens-solver",
+      "points": 5,
+      "public": false
+    },
+    {
+      "command": "make test-submission-branch-bound-pruning",
+      "points": 5,
+      "public": false
+    }
+  ],
+  "submission": {
+    "include_paths": [
+      "nqueens_solver.cpp"
+    ],
+    "private_globs": [
+      "reference/*",
+      "tests_private/*"
+    ],
+    "exclude_globs": [
+      "*.tar.gz",
+      "bin/*"
+    ]
+  },
+  "limits": {
+    "memory_mb": 256,
+    "timeout_seconds": 10
+  }
+}

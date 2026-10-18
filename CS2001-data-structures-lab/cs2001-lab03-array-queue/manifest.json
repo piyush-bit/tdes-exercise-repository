@@ -1,0 +1,48 @@
+{
+  "lab_id": "cs2001-lab03",
+  "title": "Array-Based Queue in C",
+  "version": "1.0.0",
+  "language": "c",
+  "runner_image": "lab-c-runner:v1.0",
+  "local_entrypoint": "make test-public",
+  "grading": [
+    {
+      "command": "make test-public",
+      "points": 0,
+      "public": true
+    },
+    {
+      "command": "make test-submission-enqueue",
+      "points": 3,
+      "public": false
+    },
+    {
+      "command": "make test-submission-dequeue",
+      "points": 3,
+      "public": false
+    },
+    {
+      "command": "make test-submission-front",
+      "points": 4,
+      "public": false
+    }
+  ],
+  "submission": {
+    "include_paths": [
+      "queue.c"
+    ],
+    "private_globs": [
+      "reference/*",
+      "tests_private/*"
+    ],
+    "exclude_globs": [
+      "*.o",
+      "bin/*",
+      "*.tar.gz"
+    ]
+  },
+  "limits": {
+    "memory_mb": 256,
+    "timeout_seconds": 10
+  }
+}

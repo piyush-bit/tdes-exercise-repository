@@ -1,0 +1,43 @@
+{
+  "lab_id": "cs2003-lab07",
+  "title": "GPS Route Navigation & Shortest Path Engine",
+  "version": "1.0.0",
+  "language": "cpp",
+  "runner_image": "lab-cpp-runner:v1.0",
+  "local_entrypoint": "make test-public",
+  "grading": [
+    {
+      "command": "make test-public",
+      "points": 0,
+      "public": true
+    },
+    {
+      "command": "make test-submission-dijkstra",
+      "points": 5,
+      "public": false
+    },
+    {
+      "command": "make test-submission-bellman-ford",
+      "points": 5,
+      "public": false
+    }
+  ],
+  "submission": {
+    "include_paths": [
+      "shortest_path.cpp"
+    ],
+    "private_globs": [
+      "reference/*",
+      "tests_private/*"
+    ],
+    "exclude_globs": [
+      "*.o",
+      "bin/*",
+      "*.tar.gz"
+    ]
+  },
+  "limits": {
+    "memory_mb": 256,
+    "timeout_seconds": 10
+  }
+}

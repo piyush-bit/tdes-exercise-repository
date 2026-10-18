@@ -1,0 +1,43 @@
+{
+  "lab_id": "cs2001-lab05",
+  "title": "Singly & Doubly Linked Lists in C",
+  "version": "1.0.0",
+  "language": "c",
+  "runner_image": "lab-c-runner:v1.0",
+  "local_entrypoint": "make test-public",
+  "grading": [
+    {
+      "command": "make test-public",
+      "points": 0,
+      "public": true
+    },
+    {
+      "command": "make test-submission-sll",
+      "points": 5,
+      "public": false
+    },
+    {
+      "command": "make test-submission-dll",
+      "points": 5,
+      "public": false
+    }
+  ],
+  "submission": {
+    "include_paths": [
+      "linked_lists.c"
+    ],
+    "private_globs": [
+      "reference/*",
+      "tests_private/*"
+    ],
+    "exclude_globs": [
+      "*.o",
+      "bin/*",
+      "*.tar.gz"
+    ]
+  },
+  "limits": {
+    "memory_mb": 256,
+    "timeout_seconds": 10
+  }
+}

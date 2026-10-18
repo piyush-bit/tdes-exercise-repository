@@ -1,0 +1,61 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+Desktop.ini
+
+# IDE & Editor Files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.bak
+*.patch
+*.diff
+
+# TDES & Evaluator Binaries
+euc2
+euc2.exe
+
+# Build Artifacts & Compiled Binaries
+bin/
+**/bin/
+build/
+dist/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.out
+*.exe
+*.dSYM/
+test_runner
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+venv/
+.venv/
+env/
+
+# Archives & Compressed Files
+*.tar.gz
+*.tar
+*.zip
+*.gz
+*.7z
+
+# Logs & Temporary Files
+*.log
+*.tmp
